@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-shadow: none;
+  border: none;
+}
+
+body {
+  background-color: rgb(232, 235, 240);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid rgba(123, 144, 241, 0.575);
+  background-color: rgba(130, 98, 228, 0.774);
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* menu burger */
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: rgb(109, 5, 255);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+/* menu burger */
+
+.logo {
+  font-size: 2.5em;
+  color: rgb(228, 226, 249);
+  cursor: pointer;
+  font-family: "Dancing Script", cursive;
+}
+
+.recherche {
+  width: 30%;
+  position: relative;
+}
+
+.recherche input {
+  width: calc(100% - 40px);
+  height: 19px;
+  padding: 10px 10px 10px 20px;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: none;
+  font-size: 1em;
+  background-color: rgb(217, 216, 243);
+  /* background-image: url("../img/chercher.png");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px 20px; */
+}
+
+.recherche button {
+  background-color: rgb(217, 216, 243);
+  position: absolute;
+  top: 0;
+  right: -28px;
+  padding: 5px;
+  width: 40px;
+  height: 39px;
+  text-align: center;
+  border-radius: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+.recherche button img {
+  width: 65%;
+}
+
+.menu ul {
+  display: flex;
+  gap: 5px;
+}
+
+.singup-btn {
+  color: rgb(197, 196, 255);
+  border: 2px solid rgb(4, 4, 85);
+  border-radius: 15px;
+  padding: 8px 16px;
+  transition: 0.3s;
+}
+
+.singup-btn:hover {
+  background-color: rgb(86, 85, 190);
+  color: rgb(13, 5, 49);
+}
+
+.login-btn {
+  color: rgb(197, 196, 255);
+  background-color: rgb(86, 85, 190);
+  border: 2px solid rgb(13, 5, 49);
+  border-radius: 15px;
+  padding: 8px 16px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: rgb(13, 5, 49);
+  border: 2px solid rgb(4, 4, 85);
+}
+
+.home-class {
+  color: rgb(197, 196, 255);
+  background-color: rgb(86, 85, 190);
+  border: 2px solid rgb(13, 5, 49);
+  border-radius: 15px;
+  padding: 8px 16px;
+  transition: 0.3s;
+}
+
+.home-clas :hover {
+  background-color: rgb(13, 5, 49);
+  border: 2px solid rgb(4, 4, 85);
+}
+
+.servic-class {
+  color: rgb(197, 196, 255);
+  background-color: rgb(86, 85, 190);
+  border: 2px solid rgb(13, 5, 49);
+  border-radius: 15px;
+  padding: 8px 16px;
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(72, 74, 75);
+}
+
+h2 {
+  margin-left: 200px;
+}
+p {
+  margin-inline: 200px;
+}
+
+.mappart {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 500px;
+}
+.interieur {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.descript {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-inline: 60px;
+}
+.int {
+  text-align: center;
+  color: rgb(41, 111, 216);
+  margin-left: 150px;
+}
